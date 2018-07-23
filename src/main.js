@@ -6,13 +6,14 @@ import router from './router'
 import store from './store'
 import './assets/css/base'
 import './assets/css/iconfont'
-import './assets/css/weui.min'
+// import './assets/css/weui.min'
 import './assets/css/reset'
 import axios from 'axios'
-import {Header, Button} from 'mint-ui'
+import {Header, Button, Cell} from 'mint-ui'
 
 Vue.component(Header.name, Header)
 Vue.component(Button.name, Button)
+Vue.component(Cell.name, Cell)
 
 Vue.prototype.$axios = axios
 

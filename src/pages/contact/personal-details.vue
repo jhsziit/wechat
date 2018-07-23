@@ -19,9 +19,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.view-content{
-  padding-top: 40px;
-}
 .section1{
   background: #fff;
   & li{

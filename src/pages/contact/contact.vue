@@ -1,35 +1,29 @@
 <template>
   <div>
-    <div>
-      <search-bar></search-bar>
-      <ul class="section1">
-        <router-link tag="li" :to="{name:'new-friends'}">新的朋友</router-link>
-      </ul>
-    </div>
-    <router-view></router-view>
-
+    <search-bar></search-bar>
+    <mt-cell title="新的朋友" :to="{name:'new-friends'}">
+      <img slot="icon" src="../../assets/images/contact_top-friend-notify.png" width="24" height="24">
+    </mt-cell>
+    <mt-cell title="群聊" :to="{name:'new-friends'}">
+      <img slot="icon" src="../../assets/images/contact_add-friend-addgroup.png" width="24" height="24">
+    </mt-cell>
+    <mt-cell title="标签" :to="{name:'new-friends'}">
+      <img slot="icon" src="../../assets/images/contact_top-tag.png" width="24" height="24">
+    </mt-cell>
+    <mt-cell title="公众号" :to="{name:'new-friends'}">
+      <img slot="icon" src="../../assets/images/contact_top-offical.png" width="24" height="24">
+    </mt-cell>
   </div>
 </template>
 
 <script>
-import searchBar from '../../components/search-bar'
+import searchBar from "../../components/search-bar";
 export default {
-  components:{
+  components: {
     searchBar
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-.section1{
-  background: #fff;
-  & li{
-    height: 54px;
-    line-height: 37px;
-    padding: 8px 10px;
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
-    font-size: 18px;
-  }
-}
 </style>
