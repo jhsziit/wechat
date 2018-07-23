@@ -1,0 +1,2 @@
+export const SET_HEAD_TITLE = 'SET_HEAD_TITLE'
+export const GET_WECHAT_LIST = 'GET_WECHAT_LIST'
