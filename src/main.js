@@ -9,13 +9,12 @@ import './assets/css/iconfont'
 // import './assets/css/weui.min'
 import './assets/css/reset'
 import axios from 'axios'
-import {Header, Button, Cell} from 'mint-ui'
-
-Vue.component(Header.name, Header)
-Vue.component(Button.name, Button)
-Vue.component(Cell.name, Cell)
+import Mint from 'mint-ui'
+import 'mint-ui/lib/style.css'
+import './mock/mock'
 
 Vue.prototype.$axios = axios
+Vue.use(Mint)
 
 Vue.config.productionTip = false
 

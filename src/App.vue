@@ -18,7 +18,7 @@ export default {
   },
   mounted() {
     routerItems.push(this.$route.path);
-    this.$axios.get('/api/restaurants/').then(res => {
+    this.$axios.post('/api/restaurants/').then(res => {
       console.log(res);
     })
   },
@@ -32,7 +32,6 @@ export default {
         this.routerGo = true;
         routerItems.push(to.path);
       }
-      console.log(routerItems);
       sessionStorage.setItem("routerItems", routerItems.join(";"));
     }
   },

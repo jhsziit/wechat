@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api':{
-        target: 'https://openapi.ele.me/v2',
+        target: 'https://jhtesthost.com',
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
